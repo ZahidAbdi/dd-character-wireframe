@@ -11,25 +11,9 @@ body {
   min-width: 320px;
 }
 
-input[type='text'],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
 nav {
   padding: 1% 0;
   background-color: #aaa;
-}
-
-nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -51,16 +35,18 @@ form {
   margin: 0 auto;
   padding: 0 0 40px;
   max-width: 650px;
-}
-
-form {
   text-align: left;
 }
 
-label {
-  display: block;
-}
-
-input[type='number'] {
-  width: 50px;
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
