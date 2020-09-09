@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>D&D Character Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+
+  <body>
+    <nav role="navigation">Nav</nav>
+    <main role="main">
+      <!-- Landing Page -->
+      <header>
+        <h1>Make Your D&D Character!</h1>
+        <p>
+          Here we make Character creation simple. Just roll your dice and follow
+          the steps and begin your journey to any world you like!!
+        </p>
+      </header>
+      <div class="container">
+        <form>
+          <!-- Basic Character info -->
+          <section class="char-info">
+            <label for="pName">Player Name</label>
+            <input
+              type="text"
+              id="pName"
+              name="playername"
+              placeholder="Your name.."
+            />
+
+            <label for="cName">Character Name</label>
+            <input
+              type="text"
+              id="cName"
+              name="charactername"
+              placeholder="Your character name.."
+            />
+          </section>
+          <!-- Character creation -->
+          <section class="char-create">
+            <!-- Races -->
+            <label for="race">Races</label>
+            <select id="races" name="races">
+              <option value="dragonborn">
+                Races will go here ie "Dragonborn"
+              </option>
+            </select>
+
+            <!-- Roll your attributes -->
+            <div class="button-section">
+              <button type="roll">Roll Your Character</button>
+              <!-- list of dice rolls show up here with a function -->
+            </div>
+
+            <!--Classes -->
+            <label for="class">Classes</label>
+            <select id="classes" name="classes">
+              <option value="barbarian">
+                Classes will go here ie "Barbarian"
+              </option>
+            </select>
+          </section>
+          <!-- Attributes will go here based on what was rolled  -->
+          <section class="char-at">
+            <label for="attributes"><h4>Attributes</h4></label>
+            <!-- strength -->
+            <label for="str">Strength</label>
+            <select id="str-att" class="attributes" name="str-att"></select>
+            <!-- dexterity -->
+            <label for="dex">Dexterity</label>
+            <select id="dex-att" class="attributes" name="dex-att"></select>
+            <!-- constitution -->
+            <label for="con">Constitution</label>
+            <select id="con-att" class="attributes" name="con-att"></select>
+            <!-- intelligence -->
+            <label for="int">Intelligence</label>
+            <select id="int-att" class="attributes" name="int-att"></select>
+            <!-- wisdom -->
+            <label for="wis">Wisdom</label>
+            <select id="wis-att" class="attributes" name="wis-att"></select>
+            <!-- charisma -->
+            <label for="cha">Charisma</label>
+            <select id="cha-att" class="attributes" name="cha-att"></select>
+          </section>
+          <!-- Character Backstory -->
+          <section class="backstory">
+            <label for="backstory">Character Backstory</label>
+            <textarea name="dream-summary" rows="15" required></textarea>
+          </section>
+          <section class="button-section">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </section>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
